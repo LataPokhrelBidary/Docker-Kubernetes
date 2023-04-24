@@ -10,15 +10,25 @@ create user with AdministratorAccess. Get security credentials of the user
    Launch ubuntu EC2 instance and install docker and aws cli using user data
 	
 	#! /bin/bash
+	
 	sudo apt-get update
+	
 	sudo apt-get remove docker docker-engine docker.io
+	
 	sudo apt-get install docker.io -y
+	
 	sudo systemctl start docker
+	
 	sudo systemctl enable docker
+	
 	curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+	
 	sudo apt-get update
+	
 	sudo apt-get install unzip
+	
 	unzip awscliv2.zip
+	
 	sudo ./aws/install
   
 3) SSH
@@ -34,6 +44,7 @@ create user with AdministratorAccess. Get security credentials of the user
 	          secret acces key
   
 	3.3) To enter docker command without “sudo”, add user to docker group
+	
 	          sudo usermod -aG docker $USER
 	     Re-login to the ssh
   
@@ -47,7 +58,8 @@ create user with AdministratorAccess. Get security credentials of the user
       
 5) Dockerfile
 
-	FROM nginx	
+	FROM nginx
+	
 	ADD index.html /usr/share/nginx/html
 
    NOTE: Default document root for Apache: /var/www/html
