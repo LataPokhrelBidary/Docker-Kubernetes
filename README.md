@@ -7,7 +7,7 @@ create user with AdministratorAccess. Get security credentials of the user
 
 2) EC2 Instance
 
-	Launch ubuntu EC2 instance and install docker and aws cli using user data
+   Launch ubuntu EC2 instance and install docker and aws cli using user data
 	
 	#! /bin/bash
 	sudo apt-get update
@@ -23,30 +23,31 @@ create user with AdministratorAccess. Get security credentials of the user
   
 3) SSH
     	3.1) ssh to EC2 instance and check version of installed tools
-	          $ docker --version
-	          $ aws –version
+    	
+	           docker --version
+	           aws –version
             
     	3.2) Configure aws credentials
-	          $ aws configure
-	          $ access key
-	          $ secret acces key
+    	
+	          aws configure
+	          access key
+	          secret acces key
   
 	3.3) To enter docker command without “sudo”, add user to docker group
-	          $ sudo usermod -aG docker $USER
-	          Re-login to the ssh
+	          sudo usermod -aG docker $USER
+	     Re-login to the ssh
   
 4) Static content
 
       4.1) create index.html file
       
-	         $ vi index.html
+	         vi index.html
 		    
       4.2) paste content from index.html file
       
 5) Dockerfile
 
-	FROM nginx
-	
+	FROM nginx	
 	ADD index.html /usr/share/nginx/html
 
    NOTE: Default document root for Apache: /var/www/html
@@ -55,15 +56,15 @@ create user with AdministratorAccess. Get security credentials of the user
 
 6) Docker image
 
-   $ docker build -t imageName . 
+     docker build -t imageName . 
 
 7) Docker Container
 
-   $ docker run -d -p 80:80 imageName
+    docker run -d -p 80:80 imageName
 
 8) View your application
 
-   paste public IP of ubuntu in browser
+     paste public IP of ubuntu in browser
       
 9) ECR Repo
 
