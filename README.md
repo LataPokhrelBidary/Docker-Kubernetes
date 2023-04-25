@@ -1,5 +1,7 @@
 # Docker-Kubernetes
 # PART I: create docker image and push to ECR
+![docker demo part I](https://user-images.githubusercontent.com/72663705/234431822-856e5a44-bf59-4c99-b586-722eaf90130c.jpg)
+
 
 1) IAM
 
