@@ -2,10 +2,9 @@
 # PART I: create docker image and push to ECR
 ![docker demo part I](https://user-images.githubusercontent.com/72663705/234431822-856e5a44-bf59-4c99-b586-722eaf90130c.jpg)
 
-
 1) IAM
 
-create user with AdministratorAccess. Get security credentials of the user
+   create user with AdministratorAccess. Get security credentials of the user
 
 2) EC2 Instance
 
@@ -34,12 +33,12 @@ create user with AdministratorAccess. Get security credentials of the user
 	sudo ./aws/install
   
 3) SSH
-    	3.1) ssh to EC2 instance and check version of installed tools
+    	3.1) connect (ssh) to EC2 instance and check version of installed tools
     	
 	           docker --version
 	           aws –version
             
-    	3.2) Configure aws credentials
+    	3.2) use IAM user's credentials to confiugre instance
     	
 	          aws configure
 	          access key
@@ -48,6 +47,7 @@ create user with AdministratorAccess. Get security credentials of the user
 	3.3) To enter docker command without “sudo”, add user to docker group
 	
 	          sudo usermod -aG docker $USER
+		  
 	     Re-login to the ssh
   
 4) Static content
@@ -105,6 +105,9 @@ create user with AdministratorAccess. Get security credentials of the user
     Use this image in ECR to deploy in EKS in part II 
 	
 # PART II: Deploy application on kubernetes
+	
+![k8spartII](https://user-images.githubusercontent.com/72663705/234432282-f08b8f33-9bd9-4fc3-9521-71f8db382daa.jpg)
+
 
 1)	Create IAM user 
 AWS management console ------>IAM----> create user---->policy: AdministratorAccess
