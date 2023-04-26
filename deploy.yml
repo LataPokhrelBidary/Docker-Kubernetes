@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+      name: mynginxdeply
+spec:
+      replicas: 2
+      selector:
+           matchLabels:
+                app: mynginxpod
+      template:
+          metadata:
+                labels:
+                    app: mynginxpod
+          spec:
+                containers:
+                     - name: mynginx
+                       image: {image URI} public.ecr.aws/n3b9k8l8/my_nginx
+                       ports:
+                             - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+      name: mynginxserv
+spec:
+      selector:
+           app: mynginxpod
+      ports:
+           - protocol: TCP
+             port: 80
+      type: LoadBalancer
