@@ -14,7 +14,7 @@ spec:
           spec:
                 containers:
                      - name: mynginx
-                       image: {image URI} public.ecr.aws/n3b9k8l8/my_nginx
+                       image: {image URI} public.ecr.aws/m3a9s8l8/my_nginx
                        ports:
                              - containerPort: 80
 ---
