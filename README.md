@@ -147,15 +147,15 @@
 	
 7) Above command will create deployment, replica set, pod, service of type load balancer
 	
-		a. $ kubectl get deploy
+		$ kubectl get deploy
 	
-		b. $ kubectl get rs
+		$ kubectl get rs
 	
-		c. $ kubectl get po
+		$ kubectl get po
 	
-		d. $ kubectl get svc
+		$ kubectl get svc
 	
-		e. Get load balancer DNS name and paste in browser to view your application
+   Get load balancer DNS name and paste in browser to view your application
 	
 8) Delete a cluster: You must delete the service first
 	
