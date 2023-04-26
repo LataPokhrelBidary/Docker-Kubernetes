@@ -24,12 +24,10 @@
 	          access key
 	          secret acces key
   
-	3.3) To enter docker command without “sudo”, add user to docker group
+	3.3) To enter docker command without “sudo”, add user to docker group and Re-login to the ssh
 	
 	          sudo usermod -aG docker $USER
-		  
-	     Re-login to the ssh
-  
+			       
 4) Static content
 
       4.1) create index.html file
