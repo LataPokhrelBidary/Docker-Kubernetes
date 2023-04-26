@@ -131,7 +131,10 @@
 	
    The cluster will have 2 worker nodes of t3.medium EC2 instance and will be placed in public subnet by default.
 	
-5) Kubeconfig: Above command also update kubeconfig file in client machine so client machine can connect to the cluster. Kubectl looks for a file named config in the 	$HOME/.kube directory. kubeconfig contains information about clusters, users, namespaces, and authentication mechanisms.
+5) Kubeconfig: Above command also update kubeconfig file in client machine so client machine can connect to the cluster. Kubectl looks for a file named config in the 		
+	![k8Soverall](https://user-images.githubusercontent.com/72663705/234452136-f717239e-9767-4e4e-82e6-641718d9efbf.jpg)
+
+	$HOME/.kube directory. kubeconfig contains information about clusters, users, namespaces, and authentication mechanisms.
  
 6) Create deployment/service using kubectl
 	
