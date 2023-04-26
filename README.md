@@ -96,20 +96,20 @@
 		c. ssh to client machine 
 		d. check for installed tool
 	
-			$ aws –version
-			$ eksctl version
-			$ kubectl version –short –client
+			aws –version
+			eksctl version
+			kubectl version –short –client
 	
 		e. Configure client machine with credentials
 	
-			$ aws configure
-			$ paste access key from step 1
-			$ paste secret access key from step 1
-			$ choose your aws region
+			aws configure
+			paste access key from step 1
+			paste secret access key from step 1
+			choose your aws region
 	
 3) Create EKS cluster using eksctl command
 
-		$ eksctl create cluster --name=mycluster \
+		eksctl create cluster --name=mycluster \
                		--region=us-east-1 \
                         --zones=us-east-1a,us-east-1b \
                       	--nodegroup-name mynodegroup \
