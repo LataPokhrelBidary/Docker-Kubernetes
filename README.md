@@ -98,10 +98,13 @@
 		b. Use userdata2.txt for instance to install AWS cli, eksctl, kubectl.
 		c. ssh to client machine 
 		d. check for installed tool
+	
 			$ aws –version
 			$ eksctl version
 			$ kubectl version –short –client
+	
 		e. Configure client machine with credentials
+	
 			$ aws configure
 			$ paste access key from step 1
 			$ paste secret access key from step 1
@@ -120,9 +123,13 @@
                       	--managed
 
 4) Resource created: above command will create following resources.
+	
 		• VPC and public and private subnets
+	
 		• EC2 & Autoscaling group
+	
 		• CloudFormation stack
+	
 		• EKS cluster and node group
 	
 The cluster will have 2 worker nodes of t3.medium EC2 instance and will be placed in public subnet by default.
@@ -130,18 +137,33 @@ The cluster will have 2 worker nodes of t3.medium EC2 instance and will be place
 5) Kubeconfig: Above command also update kubeconfig file in client machine so client machine can connect to the cluster. Kubectl looks for a file named config in the 	$HOME/.kube directory. kubeconfig contains information about clusters, users, namespaces, and authentication mechanisms.
  
 6) Create deployment/service using kubectl
+	
 		a. vi deploy.yaml
+	
 		b. press i to go to insert mode
+	
 		c. paste content from deploy.yaml file
+	
 		d. esc :wq
+	
 		e. $ kubectl apply -f deploy.yaml
+	
 7) Above command will create deployment, replica set, pod, service of type load balancer
+	
 		a. $ kubectl get deploy
+	
 		b. $ kubectl get rs
+	
 		c. $ kubectl get po
+	
 		d. $ kubectl get svc
+	
 		e. Get load balancer DNS name and paste in browser to view your application
+	
 8) Delete a cluster: You must delete the service first
+	
 		a. Manual way: going to console and delete resources
+	
 		b. Using eksctl command
+	
 			 $ eksctl delete cluster --name mycluster --region us-east-1
