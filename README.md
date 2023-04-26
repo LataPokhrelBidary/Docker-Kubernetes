@@ -82,6 +82,8 @@
     Use this image in ECR to deploy in EKS in part II 
 	
 # PART II: Deploy application on kubernetes
+
+![k8Soverall](https://user-images.githubusercontent.com/72663705/234452335-34832fb2-b929-480d-93ad-96e65a36ba4f.jpg)
 	
 ![k8spartII](https://user-images.githubusercontent.com/72663705/234432282-f08b8f33-9bd9-4fc3-9521-71f8db382daa.jpg)
 
@@ -131,10 +133,7 @@
 	
    The cluster will have 2 worker nodes of t3.medium EC2 instance and will be placed in public subnet by default.
 	
-5) Kubeconfig: Above command also update kubeconfig file in client machine so client machine can connect to the cluster. Kubectl looks for a file named config in the 		
-	![k8Soverall](https://user-images.githubusercontent.com/72663705/234452136-f717239e-9767-4e4e-82e6-641718d9efbf.jpg)
-
-	$HOME/.kube directory. kubeconfig contains information about clusters, users, namespaces, and authentication mechanisms.
+5) Kubeconfig: Above command also update kubeconfig file in client machine so client machine can connect to the cluster. Kubectl looks for a file named config in the      $HOME/.kube directory. kubeconfig contains information about clusters, users, namespaces, and authentication mechanisms.
  
 6) Create deployment/service using kubectl
 	
