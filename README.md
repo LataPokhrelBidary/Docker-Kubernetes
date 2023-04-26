@@ -9,9 +9,7 @@
 2) EC2 Instance
 
    Launch ubuntu EC2 instance and install docker and aws cli using userdata1.txt
-	
-	
-  
+		  
 3) SSH
 
     	3.1) connect (ssh) to EC2 instance and check version of installed tools
@@ -40,7 +38,6 @@
 5) Dockerfile
 
 	FROM nginx
-	
 	ADD index.html /usr/share/nginx/html
 
    NOTE: Default document root for Apache: /var/www/html
