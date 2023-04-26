@@ -13,6 +13,7 @@
 	
   
 3) SSH
+
     	3.1) connect (ssh) to EC2 instance and check version of installed tools
     	
 	           docker --version
