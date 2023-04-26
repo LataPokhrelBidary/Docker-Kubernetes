@@ -132,7 +132,7 @@
 	
 		• EKS cluster and node group
 	
-The cluster will have 2 worker nodes of t3.medium EC2 instance and will be placed in public subnet by default.
+   The cluster will have 2 worker nodes of t3.medium EC2 instance and will be placed in public subnet by default.
 	
 5) Kubeconfig: Above command also update kubeconfig file in client machine so client machine can connect to the cluster. Kubectl looks for a file named config in the 	$HOME/.kube directory. kubeconfig contains information about clusters, users, namespaces, and authentication mechanisms.
  
