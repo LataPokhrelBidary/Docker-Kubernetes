@@ -147,13 +147,13 @@
 	
 7) Above command will create deployment, replica set, pod, service of type load balancer
 	
-		$ kubectl get deploy
+		kubectl get deploy
 	
-		$ kubectl get rs
+		kubectl get rs
 	
-		$ kubectl get po
+		kubectl get po
 	
-		$ kubectl get svc
+		kubectl get svc
 	
    Get load balancer DNS name and paste in browser to view your application
 	
@@ -163,4 +163,4 @@
 	
 		b. Using eksctl command
 	
-			 $ eksctl delete cluster --name mycluster --region us-east-1
+			 eksctl delete cluster --name mycluster --region us-east-1
