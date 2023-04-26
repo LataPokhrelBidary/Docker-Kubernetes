@@ -38,6 +38,7 @@
 5) Dockerfile
 
 	FROM nginx
+	
 	ADD index.html /usr/share/nginx/html
 
    NOTE: Default document root for Apache: /var/www/html
