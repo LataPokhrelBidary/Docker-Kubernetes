@@ -47,11 +47,11 @@
 
 6) Docker image
 
-     docker build -t imageName . 
+     docker build -t myimagename . 
 
 7) Docker Container
 
-    docker run -d -p 80:80 imageName
+    docker run -d -p 80:80 myimagename
 
 8) View your application
 
