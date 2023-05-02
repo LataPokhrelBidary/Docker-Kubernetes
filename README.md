@@ -1,5 +1,5 @@
 # Docker-Kubernetes
-# PART I: create docker image and push to ECR
+# PART I: create docker image and push to AWS ECR
 ![docker demo part I](https://user-images.githubusercontent.com/72663705/234431822-856e5a44-bf59-4c99-b586-722eaf90130c.jpg)
 
 1) IAM
@@ -81,7 +81,7 @@
 	
     Use this image in ECR to deploy in EKS in part II 
 	
-# PART II: Deploy application on kubernetes
+# PART II: Deploy application on Kubernetes
 
 ![k8Soverall](https://user-images.githubusercontent.com/72663705/234452335-34832fb2-b929-480d-93ad-96e65a36ba4f.jpg)
 	
