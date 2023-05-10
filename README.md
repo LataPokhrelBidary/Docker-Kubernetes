@@ -88,6 +88,7 @@
 ![k8spartII](https://user-images.githubusercontent.com/72663705/234432282-f08b8f33-9bd9-4fc3-9521-71f8db382daa.jpg)
 
 1) Create IAM user 
+	
    AWS management console ------>IAM----> create user---->policy: AdministratorAccess
    Get security credentials
 
